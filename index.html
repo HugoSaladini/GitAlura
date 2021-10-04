@@ -11,6 +11,110 @@
         <li>Ansible</li>
         <li>Integracao continua</li>
         <li>kubernetes</li>
+        <p>
+
+-------------- Comandos do Git ----------------<br>
+README.md <br>
+git init (vai inicializar um repositorio git dentro da pasta)<br>
+git status (verifica o status dos arquivos)<br>
+git add . (adiciona todos os aquivos pendentes)<br>
+git commit -m "Mensagem de commit" (realiza o commit dos arquivos add)<br>
+git remote add origin ..git@hub..<br>
+git push -u origin master<br>
+<br>
+
+ls \\ Mostra os arquivos dentro da pasta<br>
+
+git log \\ Mostra historico de commits em detalhes<br>
+
+git log --oneline \\ Mostra históricos de commits de forma resumida<br>
+
+git log -p \\ Mostra as alterações dos commits
+apertandoa a letra "q" você ira sair do log -p<br>
+<br>
+-------------- 	CONTROLES DE BRANCH ----------------<br>
+
+Andes de começar a atividade, verificar se a main/master esta atualizada.<br>
+
+git pull (local do servidor/origin normalmente) master/main <br>
+
+git branch \\ Checa as branch existentes<br>
+
+git branch (nome da branch) \\ cria a branch com o nome escolhido<br>
+
+git checkout (nome da branch) \\ Entra dentro da branch escolhida<br>
+
+git checkout -b (nome da Branch)\\ Cria uma nova Branch com o nome escolhifo, e já entra dentro da Branch<br>
+
+git merge \\ Unifica o trabalho de duas Branchs separadas em um unico local <br>
+
+git rebase (nome da branch) \\ Atualiza a branck onde você esta trabalhando, com o branch do nome escolhigo <br>
+<br>
+------------------------------MANIPULANDO VERSOES<br>
+
+Antes de add - <br>
+verificar a informaçao no console do git 
+provavelmente a informação sera<br>
+git checkout -- (nome de arquivo que deseja desfazer)<br>
+
+Desfazer aquivo de ja foi add<br>
+
+Pode dar um git status para verificar as informações.<br>
+
+normalmente a opção neste caso aparece no console:<br>
+git reset HEAD ( nome de arquivo ) <br>
+
+Feito isso as informações ainda estaram no arquivo, com isso voce pode voltar a editar ou desfazer o arquivo<br>
+
+Desfazer o Commit<br>
+deve saber o rash do commit gerralmente os 5 primeiros carctrs ja 
+bastm se necessario utilizar git log para ver as informações <br>
+
+git revert (numero do rash)<br>
+:x para sair do vint<br>
+<br>
+------GUARDANDO PARA FAZER DEPOIS <br>
+
+git stash <br>
+vai salvar minhas modificações sem gerar um commit, gerando rash da aqual posso voltar se necessário<br>
+
+git stash list <br>
+mostra a lista de stash que estao disposniveis<br>
+
+git stash apply {0} passar apenas o número sem os conchets <br>
+e é necessário realizar o <br>
+git stash drop para retirar o stash que foi modificado<br>
+
+git stash pop ele faz o merge com as modificações e ja exlui o aquivo stash<br>
+<br>
+---------NAVEGAR PELAS BRANCHS<br>
+
+git checkout (ea436g) informe o log do commit que deseja utilizar<br>
+
+Neste momento você não esta mais na sua branch, você esta desanexado de branch, 
+voce esta no commit as atulizações serao neste commit especifico que vc entrou<br>
+
+será necessário criar uma nova branch dentro de commit para que consiga 
+efetuvamente trabalhar a nova atuzlizaçaõ da branch <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </p>
     </ul>
 </body>
 </html>
